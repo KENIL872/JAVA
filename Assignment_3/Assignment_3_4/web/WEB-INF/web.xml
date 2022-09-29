@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Forward_page</servlet-name>
+        <servlet-class>Forward_page</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Forward_Page_1</servlet-name>
+        <servlet-class>Forward_Page_1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>include_Page_First</servlet-name>
+        <servlet-class>include_Page_First</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Forward_page</servlet-name>
+        <url-pattern>/Forward_page</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Forward_Page_1</servlet-name>
+        <url-pattern>/Forward_Page_1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>include_Page_First</servlet-name>
+        <url-pattern>/include_Page_First</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
