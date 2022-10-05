@@ -1,5 +1,5 @@
 
-package javaapplication2;
+package Assignment_2;
 
 import javax.swing.*;
 import java.awt.*;

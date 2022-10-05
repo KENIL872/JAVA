@@ -9,6 +9,7 @@ public class Assignment_2_1  extends JApplet
     JTextField JT1 = new JTextField(20);
     JPasswordField JPass = new JPasswordField(20);
     JButton B1 = new JButton("Login");
+    
     JLabel Jl = new JLabel();
     JPanel Jp = new JPanel();
     public void init()
