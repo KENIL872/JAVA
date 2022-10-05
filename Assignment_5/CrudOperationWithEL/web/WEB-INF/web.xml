@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	 version="4.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <!--for Removeing jsp extension from url-->
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+        <url-pattern>/home</url-pattern> 
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <jsp-file>delete.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/delete</url-pattern> 
+        <url-pattern>/del</url-pattern>
+        <url-pattern>/deleteRecord</url-pattern>
+    </servlet-mapping>
+</web-app>
