@@ -34,6 +34,6 @@
         <c:remove var="age"></c:remove>
         
         <!-- redirect tag -->
-        <c:redirect url="https://www.google.com/search?q=Mahin+Sojitra" />
+        <c:redirect url="https://www.google.com/search?q=kenil+vastarpara" />
     </body>
 </html>
